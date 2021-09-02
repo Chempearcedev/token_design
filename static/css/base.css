@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage_pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Bellota';
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+#navbar {
+    color: #f3d11a;
+}
+.header {
+    position: fixed;
+    width: 50%;
+    bottom: 10px;
+    left: 550px;
+    font-family: 'Bellota';
+}
+
+.header-title {
+    font-size: small;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+.header-paragraph {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  
+  @media (min-width: 992px) {
+      .fixed-top-desktop-only {
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 1030;
+      }
+  
+      .header-container {
+          padding-top: 164px;
+      }
+  }
