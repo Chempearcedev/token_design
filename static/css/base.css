@@ -14,6 +14,10 @@ body {
     width: fit-content;
 }
 
+.nav-button {
+    top: 25px;
+}
+
 #navbar {
     color: #f3d11a;
 }
@@ -35,8 +39,14 @@ body {
 
 .nav-location {
     font-size: medium;
+    top: 40px;
 }
 
+.search-bar {
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px!important;
+}
 
 .icon {
     align-items: center;
