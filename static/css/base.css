@@ -14,13 +14,16 @@ body {
     width: fit-content;
 }
 
+.account {
+    margin-right: 0!important;
+}
+
 .nav-button {
     top: 25px;
 }
 
-#navbar {
-    color: #f3d11a;
-}
+
+
 .header {
     margin-bottom: 70px;
     font-family: 'Bellota';
