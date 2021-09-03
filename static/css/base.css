@@ -22,7 +22,14 @@ body {
     top: 25px;
 }
 
+.nav {
+    margin-left: 0;
+    padding-left: 0;
+}
 
+.dropdowns {
+    padding-right: 0;
+}
 
 .header {
     margin-bottom: 70px;
