@@ -84,29 +84,61 @@ body {
     color: white;
 }
 
+
+
+.cover {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+.product-info {
+      text-align: center;
+}
+
 .btn-black {
     background: black;
     color: white;
 }
 
 
+.image-for-info {
+    padding-right: 20px;
+}
+  
+  @media (max-width: 991px) {
+      .header-block {
+          padding-top: 116px;
+      }
+  
+      body {
+          height: calc(100vh - 116px);
+      }
+  }
+
+
+  @media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-block {
+        padding-top: 164px;
+    }
+}
+
+  
 @media (min-width: 1200px) {
     .container {
       max-width: 80%;
     }
   }
   
-  
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-block">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="cover"></div>
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="product-info mb-5 mt-md-5 text-black">
+                     <p class="mt-3">{{ product.description }}</p>
+                    <p class="mb-0">{{ product.name }}</p>
+                    {% if product.rating %}
+                   <div class="product-info"><p class="lead mb-0 font-weight-bold product-info">${{ product.price }}</p></div>
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% else %}
+                        <small class="text-muted">No Rating</small>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 col-xl-6">
+                <div class="image-for-info my-5">
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid border border-warning rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            </div>
+    </div>
+{% endblock %}
