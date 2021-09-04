@@ -8,7 +8,7 @@
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Rating</a>
                 <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -18,9 +18,9 @@
                 Bedroom
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Furniture</a>
-                <a href="" class="dropdown-item">Bedding</a>
-                <a href="" class="dropdown-item">All Bedroom</a>
+                <a href="{% url 'products' %}?category=furniture" class="dropdown-item">Furniture</a>
+                <a href="{% url 'products' %}?category=bedding" class="dropdown-item">Bedding</a>
+                <a href="{% url 'products' %}?category=furniture,bedding" class="dropdown-item">All Bedroom</a>
             </div>
         </li>
 
@@ -29,9 +29,9 @@
                 Bathroom
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Towels</a>
-                <a href="" class="dropdown-item">Essentails</a>
-                <a href="" class="dropdown-item">All Bathroom</a>
+                <a href="{% url 'products' %}?category=towels" class="dropdown-item">Towels</a>
+                <a href="{% url 'products' %}?category=essentials" class="dropdown-item">Essentails</a>
+                <a href="{% url 'products' %}?category=towels,furniture" class="dropdown-item">All Bathroom</a>
             </div>
         </li>
 
@@ -40,9 +40,9 @@
                 Living Room
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Living Room Furniture</a>
-                <a href="" class="dropdown-item">Rugs</a>
-                <a href="" class="dropdown-item">All Living Room</a>
+                <a href="{% url 'products' %}?category=living_room_furniture" class="dropdown-item">Living Room Furniture</a>
+                <a href="{% url 'products' %}?category=rugs" class="dropdown-item">Rugs</a>
+                <a href="{% url 'products' %}?category=rugs,living_room_furniture" class="dropdown-item">All Living Room</a>
             </div>
         </li>
     </ul>
