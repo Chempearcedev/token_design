@@ -15,10 +15,15 @@ body {
 }
 
 .search-bar {
-    padding-left: 10px;
-
+    margin-left: 94px;
+    padding-left: 0;
 }
 
+
+.up-button {
+    text-align: center;
+    bottom: 25px;
+}
 .account {
     margin-right: 0!important;
 }
@@ -69,8 +74,24 @@ body {
     width: 1.5rem;
 }
 
+.category-badge {
+    margin-left: 20px;
+}
+
+.badge {
+    padding-left: 40px;
+}
+
+.products-list {
+    padding-right: 5px;
+}
 .text-black {
     color: #000 !important;
+}
+
+
+.products-content {
+    padding-left: 55px;
 }
 
 .border-black {
