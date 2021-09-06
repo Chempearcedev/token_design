@@ -18,5 +18,4 @@ def add_to_cart(request, item_id):
         shopping_cart[item_id] = quantity
 
     request.session['shopping_cart'] = shopping_cart
-    print(request.session['shopping_cart'])
     return redirect(redirect_url)
