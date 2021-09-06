@@ -86,13 +86,22 @@ body {
 .products-list {
     padding-right: 5px;
 }
+
 .text-black {
     color: #000 !important;
+}
+
+#main-nav {
+    margin-bottom: 10px;
 }
 
 
 .products-content {
     padding-left: 55px;
+}
+
+.empty-cart {
+    text-align: center;
 }
 
 .border-black {
