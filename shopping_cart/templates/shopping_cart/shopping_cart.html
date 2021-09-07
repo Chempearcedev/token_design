@@ -75,7 +75,7 @@
                                     <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                 </td>
                                 <td class="py-3 w-25">
-                                    <form class="form update-form" method="POST" action="">
+                                    <form class="form update-form" method="POST" action="{% url 'update_cart' item.item_id %}">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
