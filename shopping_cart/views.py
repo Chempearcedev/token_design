@@ -25,14 +25,16 @@ def add_to_cart(request, item_id):
 
 
 def update_cart(request, item_id):
-
+    product = Product.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
     shopping_cart = request.session.get('shopping_cart', {})
 
     if quantity > 0:
         shopping_cart[item_id] = quantity
-    
-        del shopping_cart[item_id]
+        messages.success(request, f'Updated {product.name} quantity to {shopping_cart[item_id]}')
+    else:
+        shopping_cart.pop(item_id)
+        messages.success(request, f'Removed {product.name} from your shopping cart')
 
     request.session['shopping_cart'] = shopping_cart
     return redirect(reverse('view_cart'))
