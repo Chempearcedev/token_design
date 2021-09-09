@@ -15,8 +15,8 @@ body {
 }
 
 .search-bar {
-    margin-left: 5px;
-    padding-left: 0;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 
@@ -97,7 +97,11 @@ body {
 }
 
 #main-nav {
-    margin-top: 20px;
+    margin-top: 0px;
+}
+
+.nav {
+    padding-bottom: 5px!important;
 }
 
 .main-nav {
@@ -105,10 +109,6 @@ body {
     bottom: 20px;
 }
 
-
-.bottom-nav {
-    margin-top: 20px;
-}
 
 
 .products-content {
