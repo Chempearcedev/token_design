@@ -4,6 +4,7 @@ from django.contrib import messages
 
 from products.models import Product
 
+
 def view_cart(request):
 
     return render(request, 'shopping_cart/shopping_cart.html')
@@ -32,9 +33,23 @@ def update_cart(request, item_id):
     if quantity > 0:
         shopping_cart[item_id] = quantity
         messages.success(request, f'Updated {product.name} quantity to {shopping_cart[item_id]}')
+        print('Quantity more than 0')
     else:
         shopping_cart.pop(item_id)
         messages.success(request, f'Removed {product.name} from your shopping cart')
+        print('Quantity more than 0')
 
     request.session['shopping_cart'] = shopping_cart
     return redirect(reverse('view_cart'))
+
+
+def remove_from_cart(request, item_id):
+    product = Product.objects.get(pk=item_id)
+    shopping_cart = request.session.get('shopping_cart', {})
+
+    shopping_cart.pop(item_id)
+    messages.success(request, f'Removed {product.name} from your shopping cart')
+    print('Quantity more than 0')
+
+    request.session['shopping_cart'] = shopping_cart
+    return HttpResponse(status=200)
