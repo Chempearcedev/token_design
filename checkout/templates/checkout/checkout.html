@@ -7,8 +7,8 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container mb-8">
-        <div class="row">
+    <div class="container header-container mb-8 checkout-container">
+        <div class="row checkout-container">
             <div class="col"></div>
         </div>
     </div>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-6 order-lg-last mb-5">
+            <div class="col-12 col-lg-6 order-lg-last mb-5 checkout-container">
                 <p class="text-warning">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-warning">Please fill out the form below to complete your order</p>
+                <p class="text-warning checkout-container">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
