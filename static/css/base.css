@@ -281,10 +281,6 @@ a.category-badge > span.badge:hover {
           padding-top: 164px;
       }
   }
-
-  .checkout-container {
-   margin-top: 100px;
-  }
   
   
   @media (max-width: 991px) {
