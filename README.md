@@ -1,108 +1,203 @@
-pip![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Token Design 
 
-Welcome Chempearcedev,
+-------
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Token Design is an ecommerce, interior design site. The main purpose of the site is to offer a location for users to access products for their homes. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+It offers clear navigation to areas within the site to view products, store products within a shopping cart, and continue to browse the sites catagories and products. 
 
-## Gitpod Reminders
+## Table of contents 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### 1. [ Goals ](#goals)  
+### 2.  [ UX ](#UX)
+### 3.  [ Design ](#design)
+### 4.  [ User Stories ](#user-stories)
+### 5.  [ Features ](#features)
+### 6.  [ Technologies ](#technologies)
+### 7.  [ Testing ](#testing)
+### 8.  [ Deployment ](#deployment)
+### 8.  [ Credits ](#credits)
 
-`python3 -m http.server`
+--- 
 
-A blue button should appear to click: _Make Public_,
+### Goals 
 
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- To provide a site that offers interior design products to view and purchase 
+- Allow users to create a profile that will remember their purchase history when they return to the site 
+- To allows a clear understanding when a user reaches the site that it is for interior design products
+- Provide a range of products for different rooms in the home
+- Provide pop up messages when they select a product to buy 
+- Provide information about the products details, price and description.
+- Provide a secure checkout for customers to pay for products 
+- Allow easy navigation acrosss the site 
 
 ---
 
-Happy coding!
+### UX
+
+Token Design was created to provide easy navigation across the site to desired locations. A navigation bar at the top provides buttons, titled to the area of products a user wishes to buy.
+
+The site was designed from mobile first, allow a good viewing experience on small/medium screen sizes. 
+
+The main background picture on the home page was chosen to allow users to identify the purpose of the site at a glance. The pallatte used allows a contemporary feel which aligns with the goals of the site.
+
+---
+
+### Design 
+
+The design of the site is inline with the products sold through the site, this is to allow users to feel comfortable they are viewing the right site for them
+
+The colours and pictures have been used to keep a minimalistic viewing experience for the user 
+
+---
+
+### User Stories 
+
+- I am looking for products for my home that are modern and contemporary 
+
+- I am an interior designer who is looking for a site that provides products for various rooms in the home 
+
+- I am a user who wants to view products by catagory 
+
+- I am a user who wants to easily select products by catagory, price or order.
+
+- I am a user who wants to sign up to an interior design site and buy products 
+
+- I am a user who wants to add products to a cart and continue to view the site 
+
+- I am a user who wants to change the quantity of the amount of products in my basket 
+
+- I am a user who wants to pay for products through a secure payment service 
+
+- I am a user who wants to 
+
+- I am a user who wants to search for products based on key words
+
+---
+
+### Features
+
+> The site provides a landing page with navigation links. 
+
+> A products page showing all the products available in the site 
+
+> Pages dedicated to different products in catagories 
+
+> Buttons to add products to their cart 
+
+> Pop up messages to inform the user they have sucessfully added a product to their cart 
+
+> A checkout page to buy products 
+
+> A form to fill out details to make a secure payment
+
+> A search bar to allow users to serach for products based on keywords 
+
+> A profile page that shows the user the products they have purchased 
+
+---
+
+## Technologies 
+
+* Dev Tools
+  * This project used the Dev Tools to support responsiveness design.
+* Heroku
+  * Used for app hosting and deploying.
+* AWS 
+    * Used to created a bucket to hold static and media files 
+* Stripe 
+    * To allow secure payments and payment functionality
+* Bootrap
+    * Styling capabilities 
+* GitHub
+  *  This project uses GitHub to store and share the project remotely.
+
+* Figma 
+
+* W3 Validator 
+* PEP8 test
+
+### Languages 
+
+- HTML
+- CSS
+- JavaScript 
+- SQL
+- Python  
+- Django 
+- jQuery
+
+---
+
+
+## Deployment 
+
+
+Deploy to Heroku:
+
+
+- Login to your personal account.
+
+- Click on the new button.
+
+- Select "create new app"
+
+
+Now you need to connect the Github repository to our app on Heroku:
+
+- Click on the Deploy tab on the dashboard.
+
+- Select to use GitHub.
+
+- Connect to the right repository 
+
+Include the environment variables.
+
+- Click on the settings tab on the dashboard.
+
+- Click reveal config vars button and then add:
+
+
+Go back to the Deploy tab again to enable the automatic deployment feature.
+
+Click on the Deploy tab.
+
+Select the branch you want to deploy and click on the Enable Automatic deploy button.
+
+Go to settings and go down to the url for the site and clicck to open the deployed 
+
+
+### Clone the site
+
+To make a local clone, follow the following steps.
+
+- Log in to GitHub and go to the repository.
+ - Click on the green button with the text Code.
+- Click on “Open with GitHub Desktop” and follow the prompts in the GitHub Desktop Application.
+
+
+### Credits 
+
+### Mentor
+
+Adegbenga Adeye has given me some needed advice through  the project.
+
+### Tutors
+
+I had support from the Code Institute tutor team on various trouble shooting issues.
+
+Particularly, Sean and Jo have taken time to help me solve certain issues. They have provide me with trouble shooting techniques to aquip me with the information to do it myself.
+
+### Slack community 
+
+I have received advice on a particulaar issue that helped me with deployment 
+
+
+
+
+
+
+
+
+
+
