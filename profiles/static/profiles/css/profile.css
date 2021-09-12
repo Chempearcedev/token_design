@@ -1,3 +1,20 @@
+#profile-update-form .form-control {
+    color: orange;
+}
+
+#profile-update-form input::placeholder {
+    color: orange;
+}
+
+#id_default_country,
+#id_default_country option:not(:first-child) {
+    color: black;
+}
+
+#id_default_country option:first-child {
+    color: rgb(167, 129, 129);
+}
+
 .header-container {
-padding-top: 150px;
+    padding-top: 200px;
 }

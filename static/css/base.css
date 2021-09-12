@@ -205,6 +205,11 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+
 .btt-link,
 .update-link,
 .remove-item {
