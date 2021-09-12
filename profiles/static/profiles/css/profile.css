@@ -18,3 +18,8 @@
 .header-container {
     padding-top: 200px;
 }
+
+.order-history {
+    max-height: 450px;
+    overflow-y: auto;
+}
