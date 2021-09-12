@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Bellota';
+    padding: 0;
 }
 
 .main-logo-link {
@@ -105,8 +106,11 @@ body {
 }
 
 .main-nav {
-    margin-bottom: 50px;
-    bottom: 20px;
+    margin-bottom: 0px;
+    bottom: 0px;
+    padding-right: 0px!important;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 
@@ -207,6 +211,10 @@ a.category-badge > span.badge:hover {
 
 input[name='q']::placeholder {
     color: #aab7c4;
+}
+
+.category-links {
+    margin-left: 5px;
 }
 
 
