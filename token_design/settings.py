@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'products',
     'shopping_cart',
     'checkout',
+    'profiles',
 
     'crispy_forms',
     'storages',
@@ -101,7 +102,8 @@ WSGI_APPLICATION = 'token_design.wsgi.application'
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
- }
+}
+
 else:
     DATABASES = {
      'default': {
