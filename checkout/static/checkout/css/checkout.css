@@ -33,8 +33,8 @@
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 3px #353839;
-    border-style: double;
+    border: 1px rgb(44, 29, 9);
+    border-style: dotted;
 }
 
 .card-charge {
@@ -53,6 +53,15 @@
     height: 100%;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
 
 
 #loading-cover {
