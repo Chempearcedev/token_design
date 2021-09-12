@@ -1,0 +1,22 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your fabulous order at Token Design. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Your order will be shipped out to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We have your phone number on file as {{ order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }} and we can help you.
+
+We hope you enjoy your order, thank you for ordering with us.
+
+Kind Regards 
+
+Token Design
