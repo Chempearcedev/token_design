@@ -111,7 +111,7 @@ class StripeWH_Handler:
                     street_address2=shipping_details.address.line2,
                     original_cart=shopping_cart,
                     stripe_pid=pid,
-            )
+                    )
                 if isinstance(item_data, int):
                     order_line_item = OrderLineItem(
                         order=order,
