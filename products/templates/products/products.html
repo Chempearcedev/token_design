@@ -22,7 +22,7 @@
                 {% for c in running_categories %}
                 <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
 
-                    <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark mx-auto">{{ c.friendly_name }}</span>
+                    <span class="p-2 mt-4 badge badge-white text-black rounded-0 border border-dark mx-auto">{{ c.friendly_name }}</span>
                 </a>
             {% endfor %}
             </div>

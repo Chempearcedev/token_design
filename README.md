@@ -129,6 +129,11 @@ The colours and pictures have been used to keep a minimalistic viewing experienc
 
 ---
 
+### Testing 
+
+- Landing on the home page, testing navigation links. I can see that the links work for all areas. 
+   * After clicking on the 'All Product' link i noticed that the button to select a different catagory what positioned underneath a banner, edited this by adding css to create space above it.
+- Selecting products to view, takes me to the desired description of that 
 
 ## Deployment 
 
